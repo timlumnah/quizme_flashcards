@@ -1,0 +1,251 @@
+Question,Answer,Context
+What is a token in the context of a language model?,A small chunk of text — roughly 3-4 characters or about 0.75 words on average.,LLM Fundamentals
+Why do language models work with tokens instead of individual characters?,Tokens balance vocabulary size and sequence length — more efficient than characters but more flexible than whole words.,LLM Fundamentals
+What is a context window?,"The maximum number of tokens a model can consider at one time during a single inference call.",LLM Fundamentals
+What happens when input exceeds a model's context window?,"Text beyond the limit is truncated or not processed — the model cannot see it.",LLM Fundamentals
+Why does context window size matter for AI products?,"Larger windows allow more background information, but increase compute cost and latency.",LLM Fundamentals
+What is inference in the context of an LLM?,Running a trained model on new input to generate an output.,LLM Fundamentals
+What is training in machine learning?,Adjusting a model's parameters by exposing it to large amounts of data and optimizing a loss function.,LLM Fundamentals
+What is the difference between training and inference?,Training updates model weights from data. Inference uses fixed weights to generate outputs.,LLM Fundamentals
+What is a language model fundamentally trying to predict?,The next token given all previous tokens in the sequence.,LLM Fundamentals
+What is the pre-training phase of an LLM?,Exposing the model to massive amounts of text so it learns general language patterns and world knowledge.,LLM Fundamentals
+What is fine-tuning?,Further training a pre-trained model on a smaller task-specific dataset to improve performance on that task.,LLM Fundamentals
+Why fine-tune instead of training from scratch?,Pre-training is enormously expensive. Fine-tuning reuses learned representations at a fraction of the cost.,LLM Fundamentals
+What is RLHF?,"Reinforcement Learning from Human Feedback — a technique for aligning model outputs with human preferences.",LLM Fundamentals
+Why is RLHF important for AI assistants?,"Raw pre-trained models generate plausible text but aren't reliably helpful or safe. RLHF steers behavior.",LLM Fundamentals
+What is a system prompt?,Instructions prepended to a conversation that shape the model's behavior for the entire session.,LLM Fundamentals
+What is prompt engineering?,Designing input text to reliably elicit desired outputs from a language model.,LLM Fundamentals
+Why does prompt wording affect model output?,Models pattern-match on token sequences. Different wording activates different learned associations.,LLM Fundamentals
+What is few-shot prompting?,Providing a few examples of the desired input-output format directly inside the prompt.,LLM Fundamentals
+Why does few-shot prompting improve results?,Examples demonstrate the expected pattern and reduce ambiguity about what response format is wanted.,LLM Fundamentals
+What is zero-shot prompting?,Asking the model to perform a task with no examples — relying entirely on pre-trained knowledge.,LLM Fundamentals
+What is chain-of-thought prompting?,Asking the model to reason step-by-step before giving a final answer.,LLM Fundamentals
+Why does chain-of-thought prompting improve accuracy?,It forces intermediate reasoning steps that catch errors before committing to a final answer.,LLM Fundamentals
+What is temperature in LLM sampling?,A parameter controlling output randomness — higher temperature produces more varied output.,LLM Fundamentals
+What happens at temperature 0?,The model always picks the highest probability token — output becomes deterministic and repetitive.,LLM Fundamentals
+What is top-p sampling?,A method limiting token selection to the smallest set whose cumulative probability exceeds p.,LLM Fundamentals
+What is a parameter in a neural network?,A learned numerical weight that the model adjusts during training.,LLM Fundamentals
+Why do larger models generally perform better?,More parameters allow the model to store more patterns and relationships learned during training.,LLM Fundamentals
+What is a foundation model?,A large pre-trained model that serves as a base for many downstream tasks.,LLM Fundamentals
+What is instruction tuning?,Fine-tuning a model specifically on examples of instructions paired with ideal responses.,LLM Fundamentals
+What distinguishes a base model from an instruction-tuned model?,A base model predicts next tokens. An instruction-tuned model is shaped to follow directives helpfully.,LLM Fundamentals
+What is model quantization?,Reducing the numerical precision of model weights to decrease memory and speed up inference.,LLM Fundamentals
+What trade-off does quantization make?,Smaller model footprint and faster inference at the potential cost of some accuracy.,LLM Fundamentals
+What is a prompt injection attack?,Malicious input designed to override a model's system prompt or intended behavior.,LLM Fundamentals
+What is latency in the context of LLM inference?,The time between sending a request and receiving a response.,LLM Fundamentals
+What is throughput in LLM systems?,The number of tokens or requests a system can process per unit time.,LLM Fundamentals
+What does it mean for a model to be autoregressive?,It generates output one token at a time — each token conditioned on all previous tokens.,LLM Fundamentals
+What is the difference between an encoder and a decoder in a transformer?,Encoders process input into representations. Decoders generate output tokens sequentially.,LLM Fundamentals
+What type of transformer architecture do most modern LLMs use?,Decoder-only — they generate text by predicting the next token from all previous tokens.,LLM Fundamentals
+What is a KV cache?,A stored record of key-value pairs from attention to avoid redundant computation during inference.,LLM Fundamentals
+What is a completion?,The text output generated by a model in response to a prompt.,LLM Fundamentals
+What problem did the transformer architecture solve?,The inability of RNNs to process long sequences in parallel and capture long-range dependencies.,Transformer Architecture
+What is the core mechanism of a transformer?,Attention — the ability to weigh the relevance of every token against every other token.,Transformer Architecture
+What is attention in a neural network?,A mechanism that assigns different weights to different parts of the input when computing a representation.,Transformer Architecture
+What does self-attention compute?,How relevant each token in a sequence is to every other token in the same sequence.,Transformer Architecture
+What are queries keys and values in attention?,"Learned projections of input tokens. Queries ask what am I looking for, keys say what do I have, values carry the information.",Transformer Architecture
+How is an attention score computed?,By taking the dot product of a query vector with all key vectors then softmax-normalizing the result.,Transformer Architecture
+Why is softmax applied to attention scores?,To convert raw scores into a probability distribution that sums to 1.,Transformer Architecture
+What does a high attention score between two tokens mean?,The model has learned those tokens are strongly relevant to each other in this context.,Transformer Architecture
+What is multi-head attention?,Running multiple independent attention operations in parallel then concatenating the results.,Transformer Architecture
+Why use multiple attention heads?,Each head can learn to attend to different types of relationships simultaneously — syntax and semantics and coreference.,Transformer Architecture
+What is positional encoding?,Information added to token embeddings to indicate each token's position in the sequence.,Transformer Architecture
+Why do transformers need positional encoding?,Transformers process all tokens in parallel and have no inherent notion of order without it.,Transformer Architecture
+What is a feed-forward layer in a transformer?,A two-layer neural network applied independently to each token after the attention step.,Transformer Architecture
+What is layer normalization?,A technique that normalizes activations across the features of a single layer to stabilize training.,Transformer Architecture
+What is a residual connection in a transformer?,Adding the input of a sub-layer back to its output to allow gradients to flow more easily during training.,Transformer Architecture
+Why are residual connections important for deep networks?,They mitigate the vanishing gradient problem and make it practical to stack many layers.,Transformer Architecture
+What is the computational complexity of standard self-attention?,O(n²) in sequence length — each token attends to every other token.,Transformer Architecture
+Why does O(n²) complexity matter for long contexts?,Cost grows quadratically. Doubling context length quadruples compute.,Transformer Architecture
+What is scaled dot-product attention?,Attention where dot products are divided by the square root of the key dimension to prevent extremely large values.,Transformer Architecture
+Why scale by the square root of key dimension?,Large dot products push softmax into regions with tiny gradients and slow learning.,Transformer Architecture
+What is a transformer block?,A repeating unit containing self-attention and feed-forward layers with normalization and residual connections.,Transformer Architecture
+What is the embedding layer in a transformer?,A lookup table that maps each token ID to a dense vector representation.,Transformer Architecture
+What does masked attention do in a decoder?,Prevents each token from attending to future tokens — forcing the model to use only past context.,Transformer Architecture
+Why is masked attention necessary during training?,The model must learn to predict each token without seeing the answer ahead of time.,Transformer Architecture
+What is cross-attention?,Attention where queries come from one sequence and keys and values come from another.,Transformer Architecture
+What architectural family do BERT and GPT belong to?,Transformers — BERT uses encoder-only and GPT uses decoder-only.,Transformer Architecture
+What is the training objective difference between BERT and GPT?,BERT predicts masked tokens bidirectionally. GPT predicts the next token left-to-right.,Transformer Architecture
+Why is bidirectional context useful?,Understanding word meaning often requires seeing both preceding and following words.,Transformer Architecture
+What is the output layer of a decoder-only transformer?,A linear projection from the hidden state to vocabulary size followed by softmax to produce token probabilities.,Transformer Architecture
+What is flash attention?,An optimized attention algorithm that reduces memory usage by computing attention in tiled blocks.,Transformer Architecture
+What is sparse attention?,A variant where each token only attends to a subset of other tokens to reduce compute cost.,Transformer Architecture
+What is the purpose of the projection matrix in multi-head attention?,To combine the outputs of all attention heads back into a single representation.,Transformer Architecture
+What was the original transformer paper called?,"Attention Is All You Need by Vaswani et al., 2017.",Transformer Architecture
+What is the depth of a transformer?,The number of stacked transformer blocks (layers) in the model.,Transformer Architecture
+What determines the width of a transformer?,The dimensionality of its hidden state — the size of its internal representation vectors.,Transformer Architecture
+What is an embedding?,A dense numerical vector that represents a piece of data in a continuous space.,Embeddings
+Why are embeddings useful for representing text?,They capture semantic meaning — similar concepts end up close together in vector space.,Embeddings
+What does semantic similarity mean?,Two pieces of text are similar in meaning regardless of the exact words used.,Embeddings
+How do embeddings enable semantic search?,By representing queries and documents as vectors you can find documents nearest to the query in meaning.,Embeddings
+What is cosine similarity?,A measure of the angle between two vectors — values near 1 mean similar direction and similar meaning.,Embeddings
+Why use cosine similarity instead of Euclidean distance for text?,Cosine similarity focuses on direction not magnitude — robust to differences in text length.,Embeddings
+What is a vector database?,A system optimized for storing and querying high-dimensional vectors via similarity search.,Embeddings
+What is approximate nearest neighbor search?,An algorithm that finds vectors close to a query vector quickly by sacrificing some accuracy for speed.,Embeddings
+Why use approximate nearest neighbor instead of exact search?,Exact search in high dimensions is too slow at scale. ANN provides acceptable accuracy much faster.,Embeddings
+What does the dimensionality of an embedding mean?,The length of the vector — 1536 dimensions means each embedding has 1536 numbers.,Embeddings
+What is the curse of dimensionality?,In very high dimensions distances between points become nearly equal making nearest neighbor search unreliable.,Embeddings
+What is an embedding model?,A model trained specifically to produce meaningful vector representations of inputs.,Embeddings
+What is a bi-encoder architecture?,Two separate encoders that independently embed query and document — fast but less accurate than cross-encoders.,Embeddings
+What is a cross-encoder?,A model that takes query and document together as input to produce a relevance score — slower but more accurate.,Embeddings
+What is semantic chunking?,Splitting documents at natural semantic boundaries rather than fixed character counts.,Embeddings
+Why does chunk size affect embedding quality?,Too small loses context. Too large dilutes the specific meaning of relevant passages.,Embeddings
+What is an index in vector search?,A data structure that organizes vectors for efficient similarity queries.,Embeddings
+What is HNSW?,Hierarchical Navigable Small World — a popular ANN index algorithm that builds a layered graph for fast search.,Embeddings
+What is a re-ranker?,A model that takes initial search results and reorders them by more accurate relevance scoring.,Embeddings
+What is multi-modal embedding?,Representing different data types such as text and images in the same vector space.,Embeddings
+Why are multi-modal embeddings useful?,They enable cross-modal search — find images with a text query or vice versa.,Embeddings
+What is contrastive learning?,A training approach where a model learns to bring similar pairs closer and push dissimilar pairs apart.,Embeddings
+What is the difference between a word embedding and a sentence embedding?,Word embeddings represent individual words. Sentence embeddings represent the meaning of an entire sentence.,Embeddings
+What is Word2Vec?,An early embedding technique that learns word vectors by predicting surrounding words.,Embeddings
+Why did transformer-based embeddings improve on Word2Vec?,They produce context-sensitive embeddings — the same word gets different vectors in different sentences.,Embeddings
+What is embedding drift?,Embeddings generated by different model versions may not be comparable — a concern for long-lived vector stores.,Embeddings
+What is a dense retrieval system?,A search system that uses embeddings (dense vectors) rather than keyword matching (sparse vectors).,Embeddings
+What is negative sampling in embedding training?,Including examples of what is NOT similar so the model learns to push dissimilar items apart.,Embeddings
+What is a similarity threshold?,A minimum similarity score below which results are considered irrelevant and excluded.,Embeddings
+What is fine-tuned embedding?,An embedding model further trained on domain-specific data to improve retrieval in that domain.,Embeddings
+What problem does RAG solve?,It lets a model access knowledge beyond its training data without retraining or fine-tuning.,RAG
+What are the two main components of a RAG system?,A retriever that finds relevant documents and a generator (LLM) that produces an answer using those documents.,RAG
+What is context injection in RAG?,Inserting retrieved documents into the prompt so the model can reference them when generating a response.,RAG
+What is chunking in RAG?,Splitting source documents into smaller segments before embedding and indexing them.,RAG
+Why chunk documents instead of embedding the whole thing?,Embeddings of very long texts lose specificity. Smaller chunks improve retrieval precision.,RAG
+What is a common chunk size for RAG systems?,256 to 512 tokens — though optimal size is domain and use-case dependent.,RAG
+What is chunk overlap?,Including some tokens from the previous chunk at the start of the next to preserve context at boundaries.,RAG
+Why use chunk overlap?,Prevents important information from being split across chunks and lost during retrieval.,RAG
+What is the indexing stage of RAG?,Processing source documents — chunking them and generating embeddings and storing them in a vector database.,RAG
+What is the query stage of RAG?,Embedding the user's question and retrieving the most similar chunks from the index.,RAG
+What is top-k retrieval?,Returning the k most similar chunks to the query regardless of absolute similarity score.,RAG
+What is hybrid search?,Combining vector similarity search with keyword search for better overall retrieval.,RAG
+Why does hybrid search often outperform pure vector search?,Vector search handles semantic meaning. Keyword search handles exact terms and rare proper nouns.,RAG
+What is BM25?,A classic keyword-based ranking function that scores documents by term frequency and document length.,RAG
+What is a re-ranking step in RAG?,Running a cross-encoder on the top-k results to reorder them by true relevance before injecting context.,RAG
+Why re-rank after initial retrieval?,Initial retrieval is fast but approximate. Re-ranking applies a more accurate model to the shortlist.,RAG
+What is a hallucination risk in RAG systems?,The model may ignore retrieved context and generate false information or blend real context with invented detail.,RAG
+How does grounding reduce hallucinations?,Instructing the model to answer only from provided context forces it to use retrieved facts.,RAG
+What is source citation in RAG?,Including the source document or chunk in the response so users can verify claims.,RAG
+What is RAG faithfulness?,Whether the generated answer is actually supported by the retrieved context.,RAG
+What is the difference between RAG and fine-tuning?,RAG retrieves knowledge at query time. Fine-tuning bakes knowledge into model weights at training time.,RAG
+When is RAG preferable to fine-tuning?,When knowledge changes frequently or needs to be verifiable or the dataset is too small for fine-tuning.,RAG
+What is metadata filtering in RAG?,"Restricting retrieval to chunks matching certain attributes such as date range, author, or document type.",RAG
+What is a parent-child chunking strategy?,Small chunks are retrieved for precision but the model is given the larger parent chunk for context.,RAG
+What is context recall in RAG evaluation?,The fraction of ground-truth relevant information that was successfully retrieved.,RAG
+What is context precision in RAG evaluation?,The fraction of retrieved chunks that are actually relevant to the query.,RAG
+What is agentic RAG?,A RAG system where an agent decides what to retrieve and when and how many retrieval steps to take.,RAG
+What is a RAG grounding failure?,When the model's answer contradicts or ignores the retrieved context.,RAG
+What is a knowledge base in RAG?,The indexed collection of documents the retriever searches against.,RAG
+What is document preprocessing in RAG?,"Cleaning and normalizing source documents before chunking — removing formatting noise, headers, etc.",RAG
+What is an open-domain QA system?,A system that answers questions by searching a large corpus rather than relying solely on model parameters.,RAG
+What is RAGAS?,A framework for evaluating RAG systems across metrics like faithfulness and context precision and answer relevance.,RAG
+What is late interaction retrieval?,A technique where query and document embeddings interact at retrieval time rather than being pre-computed independently.,RAG
+What is ColBERT?,A late interaction model that stores per-token embeddings and computes relevance via token-level matching at query time.,RAG
+What is a retrieval pipeline?,The sequence of steps (query embedding then vector search then re-ranking then context injection) that finds relevant context.,RAG
+What is an AI agent?,"An LLM that takes actions in an environment to accomplish a goal, beyond just generating text.",Agents
+What distinguishes an agent from a chatbot?,"An agent can take actions (run code, call APIs, search the web) in addition to generating text.",Agents
+What is a tool in the context of an AI agent?,A function or API the agent can invoke to interact with the world — web search or code execution or database query.,Agents
+What is tool use or function calling?,A model capability that outputs structured calls to external functions which are executed and results returned.,Agents
+How does tool calling work in practice?,The model outputs a tool name and arguments. The runtime executes the function. The result is fed back into context.,Agents
+What is a ReAct agent?,An agent pattern that alternates between Reasoning about what to do and Acting by using a tool.,Agents
+What is planning in an agent?,The process of breaking a complex goal into a sequence of sub-tasks and deciding which tools to use.,Agents
+What is the agent loop?,The repeated cycle of observe environment then think and plan then act then observe result then repeat.,Agents
+What is a scratchpad in an agent?,A section of the context where the agent records intermediate reasoning steps before taking an action.,Agents
+What is in-context memory?,Information the agent holds in its current context window — ephemeral and lost when the context ends.,Agents
+What is episodic memory in an agent?,Stored records of past interactions that can be retrieved and injected into future contexts.,Agents
+What is semantic memory in an agent?,A knowledge store of facts and concepts the agent can retrieve separate from its training parameters.,Agents
+What is working memory in an agent?,The subset of available information currently loaded into the agent's context window.,Agents
+What is a tool schema?,A formal description of a tool's name and purpose and parameters — how the model knows how to call it.,Agents
+What is structured output?,Model output constrained to a specific format such as JSON to ensure reliable downstream parsing.,Agents
+What is an orchestrator agent?,An agent that coordinates other agents by assigning sub-tasks and aggregating results.,Agents
+What is a multi-agent system?,A collection of AI agents that collaborate or compete to accomplish tasks.,Agents
+What is a subagent?,An agent spawned by an orchestrator to handle a specific subtask.,Agents
+Why use multiple agents instead of one?,Different agents can specialize and run in parallel or be given different context to avoid cross-contamination.,Agents
+What is the handoff pattern in multi-agent systems?,One agent passes control and context to another when a task moves to a different specialization.,Agents
+What is agent grounding?,Ensuring an agent's actions are based on real data rather than hallucinated information.,Agents
+What is a human-in-the-loop checkpoint?,A point in an agent workflow where a human must approve or correct the agent's action before it proceeds.,Agents
+What is an interrupt in an agent workflow?,A mechanism that pauses the agent and returns control to a human or oversight system.,Agents
+What is prompt injection in an agent context?,Malicious content in the environment such as a webpage that hijacks the agent's instructions.,Agents
+What is the minimal footprint principle for agents?,Agents should request only necessary permissions and avoid side effects beyond the task.,Agents
+What is agent observability?,Logging and monitoring an agent's reasoning and tool calls and outputs for debugging and auditing.,Agents
+What is MCP?,Model Context Protocol — a standard for connecting AI models to external tools and data sources.,Agents
+What is agent state management?,Persisting and restoring an agent's context and memory and task progress across interruptions.,Agents
+What is long-horizon planning in agents?,An agent's ability to pursue a goal that requires many steps over a long period.,Agents
+What is a tool registry?,A catalog of available tools with their schemas that an agent can consult to discover capabilities.,Agents
+What is agent safety?,Constraints that prevent an agent from taking harmful or irreversible or unauthorized actions.,Agents
+What is an agent swarm?,A large number of lightweight agents working on different aspects of a task simultaneously.,Agents
+What is a plan-and-execute agent?,An agent that first creates a complete plan then executes it step by step.,Agents
+What is an agent's environment?,The external systems and data sources it can observe and act upon.,Agents
+What is a synchronous vs asynchronous tool call?,Synchronous waits for the result before proceeding. Asynchronous allows the agent to continue while waiting.,Agents
+What is a hallucination in an LLM?,When the model generates text that is factually incorrect or fabricated and presented as if true.,AI Evaluation
+Why do LLMs hallucinate?,They optimize for plausible-sounding text not factual accuracy — pattern matching can produce confident falsehoods.,AI Evaluation
+What is a factual hallucination?,A statement that contradicts verifiable facts not just contextual documents.,AI Evaluation
+What is a faithfulness hallucination?,A generated answer that contradicts the source documents provided in context.,AI Evaluation
+What is precision in information retrieval?,The fraction of retrieved results that are actually relevant.,AI Evaluation
+What is recall in information retrieval?,The fraction of all relevant results that were successfully retrieved.,AI Evaluation
+What is the trade-off between precision and recall?,Increasing recall often reduces precision — you retrieve more relevant items but also more irrelevant ones.,AI Evaluation
+What is the F1 score?,The harmonic mean of precision and recall — a balanced single metric when both matter equally.,AI Evaluation
+What is a benchmark in AI?,A standardized test used to measure model performance on a specific capability.,AI Evaluation
+What is MMLU?,Massive Multitask Language Understanding — a benchmark testing knowledge across 57 academic subjects.,AI Evaluation
+What is HumanEval?,A benchmark testing code generation by having models solve programming problems.,AI Evaluation
+What is perplexity in language modeling?,A measure of how well a model predicts a sample — lower perplexity means better prediction.,AI Evaluation
+What is an LLM-as-judge?,Using an LLM to score or rank outputs from another LLM — a scalable alternative to human evaluation.,AI Evaluation
+What is a limitation of LLM-as-judge evaluation?,Judges may share the same biases as evaluated models and verbose or confident outputs may score higher unfairly.,AI Evaluation
+What is a golden dataset?,A manually curated set of question-answer pairs used as ground truth for evaluation.,AI Evaluation
+What is A/B evaluation?,Comparing two model outputs side-by-side and asking evaluators which is better.,AI Evaluation
+What is answer relevance in RAG evaluation?,Whether the generated answer actually addresses the user's question.,AI Evaluation
+What is an error analysis?,Categorizing and examining failure cases to identify patterns and guide improvements.,AI Evaluation
+What is a red team in AI?,A group that adversarially probes a model to find failure modes and biases and safety issues.,AI Evaluation
+What is model calibration?,How well a model's confidence scores match actual accuracy — a well-calibrated model is right when confident.,AI Evaluation
+What is a confusion matrix?,"A table showing true positives, false positives, true negatives, and false negatives for a classifier.",AI Evaluation
+What is accuracy as an evaluation metric?,The fraction of predictions that are correct — misleading when classes are imbalanced.,AI Evaluation
+What is latency as an evaluation criterion?,The time to first token or total response time — critical for real-time user experience.,AI Evaluation
+What is cost per query in AI evaluation?,The compute cost to process one request — a key factor in scaling decisions.,AI Evaluation
+What is benchmark contamination?,When a model has seen benchmark test data during training inflating its apparent performance.,AI Evaluation
+What is out-of-distribution evaluation?,Testing a model on data significantly different from its training distribution.,AI Evaluation
+Why is out-of-distribution evaluation important?,It reveals whether a model has truly generalized or just memorized patterns from training data.,AI Evaluation
+What is a regression in model evaluation?,A decline in performance on a previously passing test after a model update.,AI Evaluation
+What is human preference evaluation?,Asking humans which of two outputs they prefer — the ground truth for subjective quality.,AI Evaluation
+What is Elo rating applied to AI?,Using the chess ranking system to compare models — a model's rating updates based on head-to-head wins.,AI Evaluation
+What is the BLEU score?,A metric comparing generated text to reference translations based on n-gram overlap.,AI Evaluation
+What is ROUGE?,A recall-oriented metric measuring overlap between generated and reference text — common for summarization.,AI Evaluation
+What is eval-driven development?,Writing evals first then improving the system until it passes — analogous to TDD for AI.,AI Evaluation
+What is a leaderboard in AI?,A ranked list of models by benchmark performance used to track state-of-the-art progress.,AI Evaluation
+What is semantic similarity scoring?,Using embeddings to measure how close a generated answer is in meaning to a reference answer.,AI Evaluation
+What is human-in-the-loop (HITL)?,"A system design where humans review, correct, or approve AI outputs at defined checkpoints.",AI Product Design
+Why include humans in AI workflows?,"To catch errors, handle edge cases, maintain accountability, and build user trust.",AI Product Design
+What is the automation spectrum in AI products?,A range from fully manual to fully automated with HITL at intermediate points.,AI Product Design
+What factors determine where to place a human checkpoint?,"Error cost, reversibility of the action, regulatory requirements, and user trust.",AI Product Design
+What is an AI copilot?,A product where AI assists humans rather than replacing them — the human remains in control.,AI Product Design
+What is an AI autopilot?,A fully automated AI workflow where humans are not in the loop for individual decisions.,AI Product Design
+When is full automation appropriate?,"When errors are low-cost, easily reversible, and the task is well-defined with measurable outputs.",AI Product Design
+What is a confidence threshold in AI products?,A score below which the system routes to a human rather than acting automatically.,AI Product Design
+What is graceful degradation in AI systems?,Falling back to simpler or human-handled behavior when the model fails or is uncertain.,AI Product Design
+What is a feedback loop in an AI product?,A mechanism that collects user corrections or ratings and feeds them back to improve the model.,AI Product Design
+What is prompt versioning?,Treating prompts like code — tracking versions and testing changes and rolling back if quality drops.,AI Product Design
+What is an AI workflow?,A structured sequence of LLM calls and tool uses and conditional logic to complete a complex task.,AI Product Design
+What is observability in AI products?,"Logging prompts, completions, latencies, and tool calls so behavior can be inspected and debugged.",AI Product Design
+What is a prompt playground?,A development tool for testing and iterating on prompts interactively before deployment.,AI Product Design
+What is a guardrail in AI products?,A safety or quality filter applied to model inputs or outputs to block harmful or low-quality content.,AI Product Design
+What is output parsing?,Extracting structured data from model output — parsing a JSON response from a completion.,AI Product Design
+What is a retry strategy for AI calls?,Automatically retrying failed or low-quality model calls with modified prompts or parameters.,AI Product Design
+What is cost optimization in AI product design?,Choosing cheaper models for simple tasks and reserving expensive models for high-value steps.,AI Product Design
+What is a routing pattern in AI systems?,Classifying requests and sending them to different models or pipelines based on complexity or type.,AI Product Design
+What is model fallback?,Switching to a different model if the primary model is unavailable or returns poor output.,AI Product Design
+What is streaming in LLM products?,Receiving and displaying model output token by token rather than waiting for the full completion.,AI Product Design
+Why does streaming improve user experience?,Users see responses begin immediately which reduces perceived latency.,AI Product Design
+What is a rate limit in AI APIs?,A cap on how many requests or tokens can be sent per unit time — enforced by the API provider.,AI Product Design
+What is a cache in AI products?,Storing the result of a model call so identical future requests return instantly without re-running the model.,AI Product Design
+What is semantic caching?,Caching based on similarity of requests — returning a cached result if a new query is close enough to a previous one.,AI Product Design
+What is context window management?,Strategies for fitting relevant information into the context limit — summarization and compression and retrieval.,AI Product Design
+What is a persona in AI product design?,A defined role or character given to the model via the system prompt to shape its communication style.,AI Product Design
+What is a fallback response?,A canned or safe reply the system returns when the model fails or times out or refuses to answer.,AI Product Design
+What is AI transparency in product design?,Communicating to users when and how AI is involved in generating content or making decisions.,AI Product Design
+What is bias in an AI product?,Systematic errors in outputs that favor or disadvantage certain groups or perspectives.,AI Product Design
+What is the alignment problem in AI?,Ensuring AI systems pursue goals and values that are beneficial to humans as intended.,AI Product Design
+What is task decomposition in AI product design?,Breaking a complex user request into smaller independently solvable sub-tasks.,AI Product Design
+What is a multi-step reasoning pipeline?,A system that chains multiple LLM calls each handling a specific reasoning step.,AI Product Design
+What is the jagged frontier concept in AI?,"AI is superhuman in some tasks and surprisingly weak in others — the capability boundary is uneven and hard to predict.",AI Product Design
+What is an AI product's failure mode?,A predictable scenario where the system breaks down — important to identify and handle explicitly.,AI Product Design
+What is the build-vs-buy decision in AI products?,Choosing between building custom AI infrastructure or using managed APIs and platforms.,AI Product Design
+What is a system prompt audit?,Reviewing and testing the system prompt to ensure it produces consistent safe and intended behavior.,AI Product Design
+What is DAG workflow design?,Organizing steps as a Directed Acyclic Graph — dependencies are explicit and parallel steps run concurrently.,AI Product Design
+What is an orchestration layer in AI products?,"The code or framework that manages agent execution, tool calls, memory, and step sequencing.",AI Product Design
+What is an AI product's north star metric?,A single measure that best captures whether the AI is delivering value to users — guides all optimization tradeoffs.,AI Product Design

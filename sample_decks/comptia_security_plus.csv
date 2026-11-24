@@ -1,0 +1,229 @@
+Question,Answer,Context
+What does the CIA triad stand for?,"Confidentiality, Integrity, Availability.",1 General Security Concepts
+What is non-repudiation?,"Proof that a party performed an action so they cannot credibly deny it (for example, a digital signature).",1 General Security Concepts
+What does AAA stand for in security?,"Authentication, Authorization, Accounting.",1 General Security Concepts
+What is the difference between authentication and authorization?,Authentication proves who you are. Authorization decides what you are allowed to do.,1 General Security Concepts
+What is a gap analysis?,Comparing the current security posture to a desired standard to find what is missing.,1 General Security Concepts
+What is the core idea of Zero Trust?,"Never trust, always verify: every request is authenticated and authorized regardless of network location.",1 General Security Concepts
+What are the two Zero Trust planes?,The control plane (decides policy) and the data plane (carries traffic and enforces decisions).,1 General Security Concepts
+"In Zero Trust, what is a Policy Enforcement Point?",The component that allows or blocks access based on decisions from the policy engine and administrator.,1 General Security Concepts
+What is an access control vestibule?,A two-door entry space that admits one person at a time. Prevents tailgating.,1 General Security Concepts
+What does a bollard do?,A short post that blocks vehicles from reaching a building.,1 General Security Concepts
+What is a honeypot?,A decoy system that attracts attackers so you can observe and study their behavior.,1 General Security Concepts
+"What are a honeynet, honeyfile, and honeytoken?",A honeynet is a network of honeypots. A honeyfile is a decoy file. A honeytoken is fake data or credentials that trigger an alert when used.,1 General Security Concepts
+What does a change management process include?,"Approval, ownership, stakeholders, impact analysis, test results, a backout plan, maintenance window, and standard operating procedure.",1 General Security Concepts
+What is a backout plan?,The steps to restore the previous state if a change fails.,1 General Security Concepts
+What is the difference between symmetric and asymmetric encryption?,Symmetric uses one shared key and is fast. Asymmetric uses a public and private key pair and is slower.,1 General Security Concepts
+What block sizes does AES support?,"AES uses a 128-bit block with key sizes of 128, 192, or 256 bits.",1 General Security Concepts
+Name an asymmetric algorithm and its use.,"RSA or ECC. Used for key exchange, digital signatures, and certificates.",1 General Security Concepts
+What is a hash?,A one-way function that turns data into a fixed-length digest. Used to verify integrity.,1 General Security Concepts
+Which hashing algorithm should you avoid because it is broken?,MD5 (and SHA-1). Prefer SHA-256 or stronger.,1 General Security Concepts
+What is salting?,Adding random data to a password before hashing so identical passwords produce different hashes and rainbow tables fail.,1 General Security Concepts
+What is key stretching?,"Making password hashing deliberately slow with repeated rounds (PBKDF2, bcrypt, scrypt) to slow brute force.",1 General Security Concepts
+What does a digital signature provide?,"Integrity, authentication, and non-repudiation.",1 General Security Concepts
+"What key signs a message, and what key verifies it?",The sender's private key signs. The sender's public key verifies.,1 General Security Concepts
+What is a Certificate Authority?,A trusted entity that issues and signs digital certificates.,1 General Security Concepts
+What does a Certificate Revocation List do?,Lists certificates that were revoked before they expired.,1 General Security Concepts
+What does OCSP do?,Online Certificate Status Protocol: checks a certificate's revocation status in real time.,1 General Security Concepts
+What is a wildcard certificate?,A certificate that covers a domain and all its subdomains at one level (*.example.com).,1 General Security Concepts
+What is a Subject Alternative Name?,A certificate field listing additional hostnames the certificate is valid for.,1 General Security Concepts
+What is a self-signed certificate?,A certificate signed by its own key instead of a trusted CA. Browsers will not trust it by default.,1 General Security Concepts
+What is a Hardware Security Module?,"A tamper-resistant device that generates, stores, and uses cryptographic keys.",1 General Security Concepts
+What does a TPM do?,A chip on the motherboard that stores keys and supports disk encryption and measured boot.,1 General Security Concepts
+"What is the difference between encryption at rest, in transit, and in use?",At rest is stored data. In transit is data moving over a network. In use is data being processed in memory.,1 General Security Concepts
+What is perfect forward secrecy?,"Session keys are not derived from long-term keys, so a later key compromise cannot decrypt past sessions.",1 General Security Concepts
+What is steganography?,Hiding data inside another file such as an image.,1 General Security Concepts
+What is tokenization?,Replacing sensitive data with a non-sensitive token. The real data is stored separately.,1 General Security Concepts
+What is data masking?,Hiding part of a value (for example showing only the last four digits of a card number).,1 General Security Concepts
+What is obfuscation?,Making data or code hard to read or understand.,1 General Security Concepts
+What is a blockchain?,"A distributed, append-only ledger where blocks are linked by hashes.",1 General Security Concepts
+What is a secure enclave?,A protected area of a processor isolated from the main OS for sensitive operations.,1 General Security Concepts
+Which threat actor is most often well funded and motivated by espionage?,A nation-state.,"2 Threats, Vulnerabilities, Mitigations"
+What is an unskilled attacker (script kiddie)?,Someone who uses existing tools and scripts without deep technical skill.,"2 Threats, Vulnerabilities, Mitigations"
+What is a hacktivist?,An attacker motivated by a political or social cause.,"2 Threats, Vulnerabilities, Mitigations"
+What is an insider threat?,"A current or former employee or contractor who misuses access, deliberately or accidentally.","2 Threats, Vulnerabilities, Mitigations"
+What is shadow IT?,Technology used inside an organization without IT approval.,"2 Threats, Vulnerabilities, Mitigations"
+List common attacker motivations.,"Financial gain, espionage, disruption, data exfiltration, revenge, ideology, and war.","2 Threats, Vulnerabilities, Mitigations"
+What is a supply chain attack?,"Compromising a vendor, supplier, or software update to reach the real target.","2 Threats, Vulnerabilities, Mitigations"
+What is business email compromise?,Impersonating an executive or vendor by email to trick staff into sending money or data.,"2 Threats, Vulnerabilities, Mitigations"
+What is pretexting?,Inventing a believable scenario to get information or access.,"2 Threats, Vulnerabilities, Mitigations"
+What is a watering hole attack?,Compromising a site that the target group is known to visit.,"2 Threats, Vulnerabilities, Mitigations"
+What is typosquatting?,Registering look-alike domain names that rely on common typing mistakes.,"2 Threats, Vulnerabilities, Mitigations"
+What is brand impersonation?,Pretending to be a trusted company in messages or sites.,"2 Threats, Vulnerabilities, Mitigations"
+What is the difference between misinformation and disinformation?,Misinformation is false information spread without intent. Disinformation is false information spread deliberately.,"2 Threats, Vulnerabilities, Mitigations"
+What is a logic bomb?,"Malicious code that triggers when a condition is met, such as a date or an event.","2 Threats, Vulnerabilities, Mitigations"
+What is a worm?,Self-replicating malware that spreads across networks without user action.,"2 Threats, Vulnerabilities, Mitigations"
+What is spyware?,Malware that secretly collects user information.,"2 Threats, Vulnerabilities, Mitigations"
+What is bloatware?,Unwanted pre-installed software that wastes resources and can add risk.,"2 Threats, Vulnerabilities, Mitigations"
+What is password spraying?,Trying a few common passwords against many accounts to avoid lockouts.,"2 Threats, Vulnerabilities, Mitigations"
+What is credential stuffing?,Using username and password pairs leaked from other breaches to log in.,"2 Threats, Vulnerabilities, Mitigations"
+What is a buffer overflow?,"Writing more data to a buffer than it holds, overwriting adjacent memory.","2 Threats, Vulnerabilities, Mitigations"
+What is a race condition?,A flaw where results depend on timing of events. TOCTOU is a time-of-check to time-of-use example.,"2 Threats, Vulnerabilities, Mitigations"
+What is CSRF?,Cross-site request forgery: tricking a logged-in user's browser into sending an unwanted request.,"2 Threats, Vulnerabilities, Mitigations"
+What is SSRF?,Server-side request forgery: making a server send requests to internal resources on the attacker's behalf.,"2 Threats, Vulnerabilities, Mitigations"
+What is directory traversal?,Using ../ sequences to access files outside the intended folder.,"2 Threats, Vulnerabilities, Mitigations"
+What is privilege escalation?,"Gaining higher permissions than intended, vertically (to admin) or horizontally (to another user).","2 Threats, Vulnerabilities, Mitigations"
+What is a replay attack?,Capturing valid traffic and resending it to gain access or repeat an action.,"2 Threats, Vulnerabilities, Mitigations"
+What is DNS poisoning?,Corrupting DNS cache records so users are sent to the wrong address.,"2 Threats, Vulnerabilities, Mitigations"
+What is ARP poisoning?,Sending fake ARP replies to redirect traffic on a local network.,"2 Threats, Vulnerabilities, Mitigations"
+What is a DDoS amplification attack?,Using small spoofed requests to servers that reply with much larger responses to the victim.,"2 Threats, Vulnerabilities, Mitigations"
+What is a deauthentication attack?,Forcing clients off a Wi-Fi network by sending forged deauth frames.,"2 Threats, Vulnerabilities, Mitigations"
+What is a rogue access point?,An unauthorized access point connected to the network.,"2 Threats, Vulnerabilities, Mitigations"
+What is MAC flooding?,Overloading a switch's MAC table so it behaves like a hub.,"2 Threats, Vulnerabilities, Mitigations"
+What is a zero-day vulnerability?,A flaw unknown to the vendor with no patch available.,"2 Threats, Vulnerabilities, Mitigations"
+What is a VM escape?,An attack that breaks out of a virtual machine to reach the host or other VMs.,"2 Threats, Vulnerabilities, Mitigations"
+What is memory injection?,Inserting malicious code into the memory of a running process.,"2 Threats, Vulnerabilities, Mitigations"
+What is a risk of unsupported or end-of-life systems?,They no longer receive security patches.,"2 Threats, Vulnerabilities, Mitigations"
+Why are default credentials a vulnerability?,"They are publicly known, so attackers try them first.","2 Threats, Vulnerabilities, Mitigations"
+What is an indicator of compromise?,"Evidence that a breach occurred, such as unusual traffic, new accounts, or file changes.","2 Threats, Vulnerabilities, Mitigations"
+What are examples of indicators for ransomware?,"Mass file renaming or encryption, ransom notes, and unusual outbound connections.","2 Threats, Vulnerabilities, Mitigations"
+What is network segmentation?,Splitting a network into zones to limit lateral movement and contain damage.,"2 Threats, Vulnerabilities, Mitigations"
+What is an application allow list?,Permits only approved applications to run.,"2 Threats, Vulnerabilities, Mitigations"
+What is hardening?,"Reducing attack surface by removing unneeded services, closing ports, changing defaults, and patching.","2 Threats, Vulnerabilities, Mitigations"
+What is the difference between EDR and traditional antivirus?,"EDR continuously monitors endpoint behavior, records activity, and supports response. Traditional antivirus mostly matches signatures.","2 Threats, Vulnerabilities, Mitigations"
+What does decommissioning an asset securely involve?,"Wiping or destroying data, removing from inventory, revoking credentials, and documenting disposal.","2 Threats, Vulnerabilities, Mitigations"
+What is least privilege as a mitigation?,Granting only the access needed so a compromised account does less damage.,"2 Threats, Vulnerabilities, Mitigations"
+What is the shared responsibility model?,"The cloud provider secures the infrastructure. The customer secures their data, access, and configurations. The split depends on IaaS, PaaS, or SaaS.",3 Security Architecture
+What is infrastructure as code?,Managing and provisioning infrastructure through version-controlled definition files.,3 Security Architecture
+What is software-defined networking?,Separating the network control plane from the data plane so networks can be configured centrally.,3 Security Architecture
+What is serverless computing?,Running functions on demand without managing servers.,3 Security Architecture
+What is a container?,"A lightweight, isolated package that shares the host OS kernel and includes an app and its dependencies.",3 Security Architecture
+What are microservices?,"An application built from small, independent services that communicate over APIs.",3 Security Architecture
+What is an air gap?,Physically isolating a system from other networks.,3 Security Architecture
+What is ICS and what is SCADA?,Industrial Control Systems run industrial processes. SCADA is a type of ICS for supervising and gathering data from remote equipment.,3 Security Architecture
+What is an RTOS?,Real-time operating system: guarantees processing within strict time limits.,3 Security Architecture
+Why are IoT devices a security concern?,"Weak default credentials, poor patching, and limited resources for security controls.",3 Security Architecture
+What is a screened subnet?,A network zone (formerly DMZ) between the internet and the internal network that hosts public-facing servers.,3 Security Architecture
+What is a jump server?,A hardened server used as the single controlled path to reach systems in a secure zone.,3 Security Architecture
+What is a reverse proxy?,"A server that sits in front of web servers, receiving client requests on their behalf.",3 Security Architecture
+What does a load balancer do?,Distributes traffic across multiple servers for availability and performance.,3 Security Architecture
+What is the difference between a stateless and stateful firewall?,Stateless checks each packet by rules alone. Stateful tracks connection state.,3 Security Architecture
+What is a next-generation firewall?,"A firewall with application awareness, deep packet inspection, and intrusion prevention.",3 Security Architecture
+What does a WAF protect against?,Web application attacks such as SQL injection and XSS.,3 Security Architecture
+What is the difference between IDS and IPS?,An IDS detects and alerts. An IPS sits inline and can block traffic.,3 Security Architecture
+What is signature-based versus anomaly-based detection?,Signature matches known attack patterns. Anomaly detects deviation from a normal baseline.,3 Security Architecture
+What is NAC?,Network Access Control: checks device posture and identity before allowing network access.,3 Security Architecture
+What is 802.1X?,Port-based network access control that authenticates devices (often with RADIUS and EAP).,3 Security Architecture
+What is the difference between IPsec and TLS VPNs?,"IPsec operates at the network layer, often for site-to-site. TLS VPNs run over HTTPS and suit remote access.",3 Security Architecture
+What is split tunneling?,Only some traffic goes through the VPN. The rest goes directly to the internet.,3 Security Architecture
+What is SASE?,Secure Access Service Edge: combines networking (SD-WAN) and cloud-delivered security.,3 Security Architecture
+What is port security on a switch?,Limits which or how many MAC addresses may use a port.,3 Security Architecture
+Which protocol replaces Telnet with encryption?,SSH.,3 Security Architecture
+Which secure protocol replaces FTP over SSH?,SFTP (FTPS uses TLS).,3 Security Architecture
+Which protocol encrypts LDAP?,"LDAPS (LDAP over TLS), port 636.",3 Security Architecture
+What does SRTP secure?,Real-time voice and video traffic (RTP).,3 Security Architecture
+What does S/MIME provide?,Email encryption and digital signatures.,3 Security Architecture
+What does DNSSEC provide?,Authenticity and integrity of DNS data using digital signatures. It does not encrypt.,3 Security Architecture
+What are the typical data classification levels?,"Public, private/internal, confidential, restricted. Government adds secret and top secret.",3 Security Architecture
+What is data sovereignty?,Data is subject to the laws of the country where it is stored.,3 Security Architecture
+What does DLP do?,Data Loss Prevention: detects and blocks sensitive data leaving the organization.,3 Security Architecture
+"What are regulated data, trade secrets, and intellectual property?",Regulated data is governed by law (like PHI or PII). Trade secrets give competitive advantage. Intellectual property covers creations such as patents and copyrights.,3 Security Architecture
+What is a hot site?,A fully equipped duplicate site that can take over almost immediately.,3 Security Architecture
+What is a warm site?,A partly equipped site that needs some setup and data restore.,3 Security Architecture
+What is a cold site?,An empty facility with space and power. The slowest and cheapest to bring online.,3 Security Architecture
+What is RTO?,Recovery Time Objective: the maximum acceptable downtime.,3 Security Architecture
+What is RPO?,Recovery Point Objective: the maximum acceptable data loss measured in time.,3 Security Architecture
+What are MTBF and MTTR?,MTBF is mean time between failures. MTTR is mean time to repair or restore.,3 Security Architecture
+What is the difference between a snapshot and a backup?,"A snapshot is a point-in-time state, usually on the same storage. A backup is a separate copy for recovery.",3 Security Architecture
+What does RAID 5 offer for resilience?,Survives one disk failure using distributed parity.,3 Security Architecture
+What is a tabletop exercise?,A discussion-based walk-through of an incident scenario with no systems affected.,3 Security Architecture
+What is a failover test?,Switching to the backup system to confirm it can take over.,3 Security Architecture
+What do a UPS and a generator provide?,A UPS gives short-term battery power. A generator provides long-term power.,3 Security Architecture
+What is capacity planning?,"Ensuring people, technology, and infrastructure can meet future demand.",3 Security Architecture
+What is high availability?,Designing systems to minimize downtime using redundancy and failover.,3 Security Architecture
+What is a CASB?,Cloud Access Security Broker: enforces security policy between users and cloud services.,3 Security Architecture
+What is a security baseline?,The minimum secure configuration standard for a system.,4 Security Operations
+What is the difference between WPA2 and WPA3?,"WPA3 adds SAE (replacing the PSK handshake), better protection against offline guessing, and forward secrecy.",4 Security Operations
+What is EAP?,Extensible Authentication Protocol: a framework for authentication methods used with 802.1X.,4 Security Operations
+What is RADIUS?,A protocol that provides centralized AAA for network access.,4 Security Operations
+"What is BYOD, COPE, and CYOD?","BYOD: bring your own device. COPE: company-owned, personally enabled. CYOD: choose your own device from an approved list.",4 Security Operations
+What is SAST versus DAST?,SAST analyzes source code without running it. DAST tests a running application.,4 Security Operations
+What is input validation?,Checking that user input is expected and safe before processing it.,4 Security Operations
+What is code signing?,Digitally signing code to prove its author and that it has not been altered.,4 Security Operations
+What is sandboxing?,Running code in an isolated environment to limit what it can affect.,4 Security Operations
+What is CVE?,Common Vulnerabilities and Exposures: a catalog of publicly known vulnerabilities with IDs.,4 Security Operations
+What does CVSS score measure?,The severity of a vulnerability on a scale of 0 to 10.,4 Security Operations
+What is a false positive and a false negative?,A false positive is an alert with no real issue. A false negative is a real issue that is missed.,4 Security Operations
+What is a credentialed vulnerability scan?,A scan that logs into systems for deeper and more accurate results.,4 Security Operations
+What is the difference between a vulnerability scan and a penetration test?,A scan identifies weaknesses. A pen test attempts to exploit them to show real impact.,4 Security Operations
+What is OSINT?,Open-source intelligence: information gathered from public sources.,4 Security Operations
+What is an ISAC?,Information Sharing and Analysis Center: an industry group that shares threat intelligence.,4 Security Operations
+What does a SIEM do?,"Collects, correlates, and analyzes logs from many sources to detect and alert on incidents.",4 Security Operations
+What does SOAR do?,"Security Orchestration, Automation, and Response: automates response workflows (playbooks).",4 Security Operations
+What is NetFlow?,"Records metadata about network traffic flows (who talked to whom, when, how much).",4 Security Operations
+What is UEBA?,User and Entity Behavior Analytics: spots abnormal behavior using baselines.,4 Security Operations
+What does SPF do?,Specifies which mail servers may send email for a domain.,4 Security Operations
+What does DKIM do?,Adds a digital signature to outgoing email so receivers can verify authenticity and integrity.,4 Security Operations
+What does DMARC do?,Tells receivers what to do when SPF or DKIM checks fail and provides reporting.,4 Security Operations
+What is SSO?,Single sign-on: one login grants access to multiple applications.,4 Security Operations
+What is federation?,"Trusting identities across organizations, typically using SAML or OpenID Connect.",4 Security Operations
+What is SAML?,An XML-based standard for exchanging authentication and authorization data between an identity provider and a service provider.,4 Security Operations
+What is OAuth?,An authorization framework that lets apps access resources on a user's behalf without sharing passwords.,4 Security Operations
+What is OpenID Connect?,An authentication layer on top of OAuth 2.0.,4 Security Operations
+What are the authentication factor categories?,"Something you know, something you have, something you are, and somewhere you are.",4 Security Operations
+What is PAM?,"Privileged Access Management: controlling, monitoring, and auditing privileged accounts.",4 Security Operations
+What is just-in-time access?,Granting elevated permissions only when needed and for a limited time.,4 Security Operations
+What is MAC (access control)?,Mandatory Access Control: the system enforces access using security labels set by an administrator.,4 Security Operations
+What is DAC?,Discretionary Access Control: the resource owner decides who has access.,4 Security Operations
+What is RBAC?,"Role-Based Access Control: permissions are assigned to roles, and users get roles.",4 Security Operations
+What is ABAC?,"Attribute-Based Access Control: decisions are based on attributes of the user, resource, and context.",4 Security Operations
+What are the incident response phases?,"Preparation, detection, analysis, containment, eradication, recovery, and lessons learned.",4 Security Operations
+What happens during containment?,"Limiting the spread and impact of an incident, such as isolating systems.",4 Security Operations
+What is the difference between eradication and recovery?,"Eradication removes the cause (malware, accounts). Recovery restores systems to normal operation.",4 Security Operations
+What is the order of volatility?,"Collect most volatile first: CPU registers and cache, RAM, swap and temporary files, disk, remote logs, archival media.",4 Security Operations
+What is chain of custody?,"Documentation of who handled evidence and when, preserving its integrity.",4 Security Operations
+What is a legal hold?,A requirement to preserve data that may be relevant to a legal case.,4 Security Operations
+What is e-discovery?,Identifying and collecting electronic data for legal proceedings.,4 Security Operations
+What is root cause analysis?,Finding the underlying reason an incident happened to prevent recurrence.,4 Security Operations
+What is the difference between a playbook and a runbook?,A playbook describes how to respond to a type of incident. A runbook gives detailed steps for operational tasks and is often automated.,4 Security Operations
+What is a hash used for in forensics?,To prove that a copy of evidence is identical to the original.,4 Security Operations
+Why take a forensic image instead of examining the original?,To preserve the original evidence and avoid changing it.,4 Security Operations
+What does asset management involve?,"Maintaining an inventory of hardware, software, and data with owners and classification.",4 Security Operations
+What is the purpose of log aggregation?,"Bringing logs together in one place for search, correlation, and retention.",4 Security Operations
+What is alert tuning?,Adjusting detection rules to reduce false positives and focus on real threats.,4 Security Operations
+What is the purpose of a bastion host?,A hardened host that is exposed to untrusted networks and gives controlled access to internal systems.,4 Security Operations
+What is automation useful for in security operations?,"Account provisioning, ticket creation, resource scaling, and enforcing guardrails with fewer errors.",4 Security Operations
+What is a user provisioning process?,"Creating accounts with appropriate access, and removing or changing them when roles change or people leave.",4 Security Operations
+What are the four main risk responses?,"Avoid, mitigate, transfer, and accept.",5 Program Management and Oversight
+What is risk transference?,"Shifting risk to a third party, such as with insurance.",5 Program Management and Oversight
+What is a risk register?,"A record of identified risks with owners, likelihood, impact, and treatment.",5 Program Management and Oversight
+What is the formula for Single Loss Expectancy?,SLE = Asset Value x Exposure Factor.,5 Program Management and Oversight
+What is the formula for Annualized Loss Expectancy?,ALE = SLE x ARO (Annualized Rate of Occurrence).,5 Program Management and Oversight
+What is the difference between qualitative and quantitative risk analysis?,"Qualitative uses ratings like high, medium, low. Quantitative uses numbers such as dollar values.",5 Program Management and Oversight
+What is risk appetite versus risk tolerance?,Appetite is how much risk an organization is willing to pursue. Tolerance is how much variation from the target it accepts.,5 Program Management and Oversight
+What is residual risk?,The risk that remains after controls are applied.,5 Program Management and Oversight
+"What is the difference between a policy, a standard, a procedure, and a guideline?",Policy states intent and requirements. A standard sets specific mandatory rules. A procedure gives step-by-step instructions. A guideline is advice and is optional.,5 Program Management and Oversight
+What is an AUP?,Acceptable Use Policy: rules for how systems and data may be used.,5 Program Management and Oversight
+What law governs publicly traded company financial reporting controls?,Sarbanes-Oxley Act (SOX).,5 Program Management and Oversight
+What does GLBA cover?,Privacy and safeguards for financial institutions' customer information.,5 Program Management and Oversight
+What does HIPAA cover?,Privacy and security of protected health information.,5 Program Management and Oversight
+What is NIST CSF?,"A voluntary framework with core functions Identify, Protect, Detect, Respond, Recover (and Govern in version 2.0).",5 Program Management and Oversight
+What is ISO 27001?,An international standard for information security management systems.,5 Program Management and Oversight
+What are the CIS Controls?,A prioritized set of security actions to defend against common attacks.,5 Program Management and Oversight
+What is an SLA?,Service Level Agreement: defines expected service levels and penalties.,5 Program Management and Oversight
+What is an MOU or MOA?,A memorandum of understanding (or agreement): a non-binding statement of shared intent.,5 Program Management and Oversight
+What is an MSA?,Master Services Agreement: sets overall terms for a business relationship.,5 Program Management and Oversight
+What is an NDA?,Non-Disclosure Agreement: a legal agreement to keep information confidential.,5 Program Management and Oversight
+What is a BPA?,"Business Partnership Agreement: defines how partners share profits, responsibilities, and risk.",5 Program Management and Oversight
+What is a right-to-audit clause?,Lets an organization audit a vendor's controls.,5 Program Management and Oversight
+What is third-party vendor risk management?,Assessing and monitoring the security of suppliers and partners.,5 Program Management and Oversight
+What is the difference between an internal and external audit?,Internal is done by the organization's own staff. External is done by an independent third party.,5 Program Management and Oversight
+What is a white-box versus black-box penetration test?,White box (known environment) gives full information. Black box (unknown environment) gives none. Gray box (partially known) gives some.,5 Program Management and Oversight
+What are rules of engagement?,"The agreed scope, methods, and limits for a penetration test.",5 Program Management and Oversight
+"What do red, blue, and purple teams do?",Red attacks. Blue defends. Purple combines both to share findings.,5 Program Management and Oversight
+What is a phishing simulation?,A test campaign sending fake phishing messages to measure and train users.,5 Program Management and Oversight
+What is the purpose of security awareness training?,"To teach staff to recognize threats and follow policy, reducing human risk.",5 Program Management and Oversight
+What is a BCP versus a DRP?,A business continuity plan keeps critical functions running. A disaster recovery plan restores IT systems.,5 Program Management and Oversight
+What is a BIA?,Business impact analysis: identifies critical functions and the effect of downtime.,5 Program Management and Oversight
+What is the role of a data owner?,"Accountable for a dataset, including classification and access decisions.",5 Program Management and Oversight
+What is the difference between a data controller and a data processor?,The controller decides why and how personal data is processed. The processor processes data on the controller's behalf.,5 Program Management and Oversight
+What is a data custodian (steward)?,Manages and protects data day to day according to the owner's rules.,5 Program Management and Oversight
+What is a DPO?,Data Protection Officer: oversees data protection compliance (for example under GDPR).,5 Program Management and Oversight
+What is a separation of duties?,Splitting critical tasks across people so no single person can complete fraud alone.,5 Program Management and Oversight
+What is job rotation?,Moving employees between roles to detect fraud and reduce dependency.,5 Program Management and Oversight
+What is a mandatory vacation policy?,Requiring leave so others can detect irregularities in the person's work.,5 Program Management and Oversight
+What does offboarding include?,"Disabling accounts, recovering assets, removing access, and reminding of obligations.",5 Program Management and Oversight
+What is due diligence versus due care?,Due diligence is researching and verifying risk. Due care is acting to protect and meet obligations.,5 Program Management and Oversight
+What is a compliance attestation?,"A formal statement that controls meet requirements, often supported by evidence.",5 Program Management and Oversight
+What is the purpose of reporting a breach?,Legal and regulatory duty to notify authorities and affected people within required timeframes.,5 Program Management and Oversight
+What is a security governance structure?,"Boards, committees, and roles that set direction and oversee security.",5 Program Management and Oversight

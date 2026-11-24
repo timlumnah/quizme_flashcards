@@ -1,0 +1,244 @@
+Question,Answer,Context
+"What does NFC stand for, and what is its typical range?","Near Field Communication. Very short range, about 4 cm (1.5 in). Used for contactless payments and quick pairing.",Core 1: Mobile Devices
+What is the typical maximum range of a Class 2 Bluetooth device?,About 10 meters (33 feet).,Core 1: Mobile Devices
+What is tethering?,"Sharing a device's cellular data connection with another device over USB, Bluetooth, or Wi-Fi (hotspot).",Core 1: Mobile Devices
+What is the purpose of Mobile Device Management (MDM)?,"Centrally enroll, configure, secure, and remotely lock or wipe mobile devices.",Core 1: Mobile Devices
+What does the digitizer do in a touchscreen?,"Converts touch input into signals the device understands. A failed digitizer causes dead zones, ghost touches, or no response.",Core 1: Mobile Devices
+What is an eSIM?,A SIM built into the device that is provisioned digitally with a carrier profile instead of a physical card.,Core 1: Mobile Devices
+What does airplane mode disable?,"All wireless radios: cellular, Wi-Fi, Bluetooth, and NFC.",Core 1: Mobile Devices
+What is a SODIMM and where is it used?,Small Outline DIMM. A compact memory module used in laptops and small form factor devices.,Core 1: Mobile Devices
+What does a laptop docking station provide?,"Extra ports, external displays, and often power through a single connection to the laptop.",Core 1: Mobile Devices
+What is the difference between POP3 and IMAP?,POP3 downloads mail (usually removing it from the server). IMAP keeps mail on the server and syncs it across devices.,Core 1: Mobile Devices
+What is a CCFL inverter on an older laptop?,"The board that powers the CCFL backlight. If it fails, the screen is very dim but the image is faintly visible under a flashlight.",Core 1: Mobile Devices
+"Which laptop display type uses an LED backlight, not a CCFL one?",LED-backlit LCD panels (most modern laptops). OLED panels need no backlight at all.,Core 1: Mobile Devices
+What is a MiFi or mobile hotspot device?,A standalone portable device that shares a cellular data connection over Wi-Fi.,Core 1: Mobile Devices
+What is the difference between Lightning and USB-C?,"Lightning is Apple's proprietary reversible port. USB-C is an open reversible standard that carries data, power delivery, and video.",Core 1: Mobile Devices
+What is a GPS receiver's basic requirement to get a position fix?,Signals from at least four satellites (three for 2D position plus one for time).,Core 1: Mobile Devices
+What does 'rooting' or 'jailbreaking' a mobile device do?,"Removes the manufacturer's restrictions to give root-level access, bypassing built-in security protections.",Core 1: Mobile Devices
+What is 'sideloading' an app?,Installing an app from outside the official app store.,Core 1: Mobile Devices
+What port does HTTP use?,TCP 80.,Core 1: Networking
+What port does HTTPS use?,TCP 443.,Core 1: Networking
+What ports does FTP use?,TCP 20 (data) and 21 (control).,Core 1: Networking
+What port does SSH use?,TCP 22.,Core 1: Networking
+What port does Telnet use?,"TCP 23. Unencrypted, so avoid it.",Core 1: Networking
+What port does SMTP use?,TCP 25 (server to server). Submission with TLS often uses 587.,Core 1: Networking
+What port does DNS use?,UDP and TCP 53.,Core 1: Networking
+What ports does DHCP use?,UDP 67 (server) and 68 (client).,Core 1: Networking
+What port does TFTP use?,UDP 69.,Core 1: Networking
+What port does POP3 use?,TCP 110 (995 with SSL/TLS).,Core 1: Networking
+What port does IMAP use?,TCP 143 (993 with SSL/TLS).,Core 1: Networking
+What port does SNMP use?,UDP 161 (traps on 162).,Core 1: Networking
+What port does LDAP use?,TCP 389 (LDAPS uses 636).,Core 1: Networking
+What port does SMB use for file sharing on modern Windows?,TCP 445.,Core 1: Networking
+What port does RDP use?,TCP 3389.,Core 1: Networking
+What are the NetBIOS ports?,"UDP 137 and 138, TCP 139.",Core 1: Networking
+What is the difference between TCP and UDP?,"TCP is connection-oriented and reliable (handshake, acknowledgements, retransmission). UDP is connectionless and faster, with no delivery guarantee.",Core 1: Networking
+What does DHCP do?,"Automatically assigns IP address, subnet mask, default gateway, and DNS server settings to clients.",Core 1: Networking
+What are the four steps of the DHCP process?,"Discover, Offer, Request, Acknowledge (DORA).",Core 1: Networking
+What is an APIPA address and what does it indicate?,A 169.254.x.x self-assigned address. The client could not reach a DHCP server.,Core 1: Networking
+What are the private IPv4 ranges?,"10.0.0.0/8, 172.16.0.0/12, and 192.168.0.0/16.",Core 1: Networking
+What is a default gateway?,The router address a host sends traffic to when the destination is outside its own subnet.,Core 1: Networking
+What does a DNS A record map?,A hostname to an IPv4 address (AAAA maps to IPv6).,Core 1: Networking
+What does a DNS MX record do?,Identifies the mail servers for a domain.,Core 1: Networking
+What does a DNS CNAME record do?,Creates an alias from one hostname to another (canonical) hostname.,Core 1: Networking
+What does a DNS PTR record do?,Reverse lookup: maps an IP address to a hostname.,Core 1: Networking
+What does a DNS TXT record commonly hold?,"Free text such as SPF, DKIM, and domain verification values.",Core 1: Networking
+How long is an IPv6 address and how is it written?,"128 bits, written as eight groups of four hex digits separated by colons.",Core 1: Networking
+What is the IPv6 loopback address?,::1,Core 1: Networking
+What is the IPv6 link-local prefix?,fe80::/10,Core 1: Networking
+How long is a MAC address?,"48 bits, written as six hex pairs (for example 00:1A:2B:3C:4D:5E).",Core 1: Networking
+"What is the difference between a hub, a switch, and a router?",A hub repeats traffic to all ports. A switch forwards frames by MAC address. A router forwards packets between networks by IP address.,Core 1: Networking
+What does PoE do?,"Power over Ethernet delivers electrical power and data over one Ethernet cable (for access points, IP phones, cameras).",Core 1: Networking
+What is the maximum length of a standard Ethernet copper segment?,100 meters (328 feet).,Core 1: Networking
+What speed does Cat 5e support?,Up to 1 Gbps.,Core 1: Networking
+What speed and distance does Cat 6 support?,"10 Gbps up to about 55 m, and 1 Gbps up to 100 m. Cat 6a does 10 Gbps up to 100 m.",Core 1: Networking
+What is the difference between single-mode and multimode fiber?,Single-mode uses a small core and laser for long distances. Multimode uses a larger core and LED/VCSEL for shorter runs.,Core 1: Networking
+Which connectors are used with fiber optic cable?,"LC, SC, and ST.",Core 1: Networking
+Which connector is used on coaxial cable for cable TV and broadband?,F-type connector.,Core 1: Networking
+What is the difference between RJ45 and RJ11?,RJ45 is an 8-pin Ethernet connector. RJ11 is a smaller 6-pin connector for telephone lines.,Core 1: Networking
+Which tool terminates a cable into a wall jack or patch panel?,A punch-down tool.,Core 1: Networking
+What does a cable crimper do?,Attaches RJ45 or RJ11 connectors to the end of a cable.,Core 1: Networking
+What does a toner and probe kit do?,Traces a cable's path or locates a specific cable in a bundle.,Core 1: Networking
+What does a loopback plug do?,Tests a port's transmit and receive functions by sending a signal back into the same port.,Core 1: Networking
+What is a Wi-Fi analyzer used for?,"Showing nearby networks, channels, and signal strength to find interference and choose channels.",Core 1: Networking
+Which 802.11 standards use only the 2.4 GHz band?,802.11b and 802.11g.,Core 1: Networking
+Which 802.11 standard uses only 5 GHz?,802.11a and 802.11ac (Wi-Fi 5).,Core 1: Networking
+"Which 802.11 standard is Wi-Fi 6, and what band does it use?",802.11ax. It uses 2.4 and 5 GHz. Wi-Fi 6E adds the 6 GHz band.,Core 1: Networking
+Which three 2.4 GHz channels do not overlap?,"Channels 1, 6, and 11.",Core 1: Networking
+What does SSID mean?,Service Set Identifier: the name of a wireless network.,Core 1: Networking
+What is port forwarding?,Directing inbound traffic on a specific external port to a specific internal host and port.,Core 1: Networking
+What is a DMZ on a SOHO router?,A host or segment exposed to the internet outside the main LAN firewall rules. Use carefully.,Core 1: Networking
+What is a VLAN?,A logical broadcast domain created on a switch so ports can be grouped regardless of physical location.,Core 1: Networking
+What does QoS do?,Prioritizes certain traffic (like voice and video) over other traffic.,Core 1: Networking
+"What is the difference between LAN, WAN, PAN, and MAN?",LAN is a local site. WAN spans large areas. PAN is personal range (Bluetooth). MAN covers a city or campus area.,Core 1: Networking
+What is a VPN?,An encrypted tunnel across an untrusted network such as the internet.,Core 1: Networking
+How many pins does a DDR4 desktop DIMM have?,288 pins. DDR5 DIMMs also have 288 pins but are keyed differently and are not interchangeable.,Core 1: Hardware
+What does ECC memory do?,Detects and corrects single-bit memory errors. Used in servers.,Core 1: Hardware
+What is dual-channel memory?,Two memory modules accessed in parallel for higher bandwidth. Modules should match and sit in the paired slots.,Core 1: Hardware
+What is the maximum speed of SATA III?,6 Gbps.,Core 1: Hardware
+What is NVMe?,"A protocol for SSDs over PCIe, usually in an M.2 slot. Much faster than SATA.",Core 1: Hardware
+What does RAID 0 provide?,"Striping for speed. No redundancy, so one failed drive loses all data. Needs 2+ drives.",Core 1: Hardware
+What does RAID 1 provide?,Mirroring. Full copy on a second drive. Survives one drive failure. Needs 2 drives.,Core 1: Hardware
+What does RAID 5 provide?,Striping with distributed parity. Survives one drive failure. Needs 3+ drives.,Core 1: Hardware
+What does RAID 6 provide?,Striping with double parity. Survives two drive failures. Needs 4+ drives.,Core 1: Hardware
+What does RAID 10 provide?,A stripe of mirrors. Speed plus redundancy. Needs 4+ drives.,Core 1: Hardware
+What is the main ATX motherboard power connector?,A 24-pin connector (20+4).,Core 1: Hardware
+What connector supplies power to the CPU?,"A 4-pin, 8-pin, or 4+4-pin ATX12V (EPS) connector.",Core 1: Hardware
+What connector powers a high-end graphics card?,A 6-pin or 8-pin PCIe power connector (or a 12VHPWR/12V-2x6 connector on newer cards).,Core 1: Hardware
+What is the difference between LGA and PGA CPU sockets?,LGA has pins on the socket and flat contacts on the CPU. PGA has pins on the CPU.,Core 1: Hardware
+Why is thermal paste applied between the CPU and heat sink?,It fills microscopic gaps to improve heat transfer.,Core 1: Hardware
+"What does the CMOS battery power, and what is its common type?",It keeps BIOS/UEFI settings and the real-time clock. Usually a CR2032 coin cell.,Core 1: Hardware
+What does UEFI offer over legacy BIOS?,"GPT disk support, Secure Boot, faster boot, larger disks, and a graphical interface.",Core 1: Hardware
+What is the purpose of a TPM?,A chip that stores cryptographic keys and supports features like BitLocker and secure boot measurements.,Core 1: Hardware
+"Which common motherboard form factors exist, from largest to smallest?","ATX, microATX, Mini-ITX.",Core 1: Hardware
+How many lanes does the typical graphics card slot use?,PCIe x16.,Core 1: Hardware
+What are the main steps of the laser printing process?,"Processing, charging, exposing, developing, transferring, fusing, cleaning.",Core 1: Hardware
+What does the fuser do in a laser printer?,Heats and presses the toner onto paper to fix it permanently.,Core 1: Hardware
+How does an inkjet printer put ink on paper?,Heating or piezoelectric elements push tiny droplets of ink through nozzles.,Core 1: Hardware
+What is a thermal printer commonly used for?,Receipts and labels. Heat-sensitive paper darkens where heated.,Core 1: Hardware
+What is an impact printer used for?,Multi-part forms. Pins strike a ribbon onto paper (dot matrix).,Core 1: Hardware
+What does DPI measure on a printer?,Dots per inch: print resolution.,Core 1: Hardware
+"Which display panel type has the best viewing angles and color among IPS, TN, and VA?",IPS. TN is fastest and cheapest but has the worst angles.,Core 1: Hardware
+What is a common use of DisplayPort over HDMI?,Higher refresh rates and multiple monitors from one port using daisy chaining (MST).,Core 1: Hardware
+Which video connector is analog?,"VGA (15-pin). DVI-A is also analog, DVI-D is digital.",Core 1: Hardware
+What is a Type 1 hypervisor?,"Bare-metal: runs directly on hardware (ESXi, Hyper-V). Used for servers.",Core 1: Virtualization and Cloud
+What is a Type 2 hypervisor?,"Hosted: runs as an application on a normal OS (VirtualBox, VMware Workstation).",Core 1: Virtualization and Cloud
+What is IaaS?,"Infrastructure as a Service: you rent virtual machines, storage, and networks (for example AWS EC2).",Core 1: Virtualization and Cloud
+What is PaaS?,Platform as a Service: you rent a platform to build and run apps without managing the servers.,Core 1: Virtualization and Cloud
+What is SaaS?,Software as a Service: you use finished software through a browser or client (for example Microsoft 365).,Core 1: Virtualization and Cloud
+"What is the difference between public, private, hybrid, and community cloud?",Public is shared and provider-owned. Private is for one organization. Hybrid combines both. Community is shared by organizations with common needs.,Core 1: Virtualization and Cloud
+What is rapid elasticity in cloud computing?,Automatically scaling resources up or down to match demand.,Core 1: Virtualization and Cloud
+What is VDI?,Virtual Desktop Infrastructure: user desktops run as VMs on central servers.,Core 1: Virtualization and Cloud
+Why use a VM sandbox?,To test software or malware in isolation from the production system.,Core 1: Virtualization and Cloud
+What does 'metered' or 'measured service' mean in the cloud?,Usage is tracked and billed based on consumption.,Core 1: Virtualization and Cloud
+What are the six CompTIA troubleshooting steps in order?,"1 Identify the problem. 2 Establish a theory of probable cause. 3 Test the theory. 4 Establish a plan of action and implement the solution. 5 Verify full system functionality and implement preventive measures. 6 Document findings, actions, and outcomes.",Core 1: Hardware and Network Troubleshooting
+What is the first step when troubleshooting?,"Identify the problem: gather information, question the user, identify symptoms, determine what changed, and back up if needed.",Core 1: Hardware and Network Troubleshooting
+A PC powers on but shows no display. What do you check first?,"Monitor power and input source, cable connections, then reseat the RAM and video card.",Core 1: Hardware and Network Troubleshooting
+What does a continuous or repeating beep at startup usually indicate?,A hardware fault such as RAM or video. Check the motherboard manual for the beep code.,Core 1: Hardware and Network Troubleshooting
+What are common causes of random shutdowns or restarts?,"Overheating, failing power supply, bad RAM, or dust-clogged fans.",Core 1: Hardware and Network Troubleshooting
+A hard drive makes a clicking or grinding noise. What does this suggest?,Imminent mechanical failure. Back up data immediately.,Core 1: Hardware and Network Troubleshooting
+What should you do with a swollen laptop battery?,"Stop using it, do not puncture it, and recycle it properly. Replace it.",Core 1: Hardware and Network Troubleshooting
+A network adapter shows a link light but no connectivity. What might you check?,"IP configuration (APIPA?), DHCP, VLAN, cable, and the switch port.",Core 1: Hardware and Network Troubleshooting
+What does a 169.254.x.x address on a wired client suggest?,The client cannot reach a DHCP server.,Core 1: Hardware and Network Troubleshooting
+What does an 'IP address conflict' mean?,Two devices on the network have the same IP address. Fix by correcting static assignments or the DHCP scope.,Core 1: Hardware and Network Troubleshooting
+What does a printer ghost image or repeated mark usually point to?,A damaged or dirty drum or fuser roller.,Core 1: Hardware and Network Troubleshooting
+What causes vertical streaks on a laser print?,"A dirty or damaged drum, a scratched drum, or a worn or clogged toner cartridge.",Core 1: Hardware and Network Troubleshooting
+What does a ping to 127.0.0.1 test?,The local TCP/IP stack on the host (loopback).,Core 1: Hardware and Network Troubleshooting
+What are the main Windows 11 minimum requirements?,"64-bit CPU at 1 GHz with 2+ cores, 4 GB RAM, 64 GB storage, UEFI with Secure Boot, and TPM 2.0.",Core 2: Operating Systems
+Which Windows editions can join a domain?,"Pro, Enterprise, and Education. Home cannot join a domain.",Core 2: Operating Systems
+Which Windows edition lacks BitLocker and Remote Desktop hosting?,Home.,Core 2: Operating Systems
+What is the maximum file size on FAT32?,4 GB.,Core 2: Operating Systems
+Which file system should you use for Windows with permissions and encryption support?,NTFS.,Core 2: Operating Systems
+What is exFAT best for?,Large removable drives that need to work across Windows and macOS.,Core 2: Operating Systems
+What file system does modern macOS use?,APFS (earlier versions used HFS+).,Core 2: Operating Systems
+What file system does Linux typically use?,ext4 (also XFS and Btrfs).,Core 2: Operating Systems
+What is the difference between MBR and GPT?,MBR supports disks up to 2 TB and 4 primary partitions. GPT supports much larger disks and many partitions and is used with UEFI.,Core 2: Operating Systems
+What does Task Manager show?,"Running processes, performance, startup apps, users, and services. Used to end tasks.",Core 2: Operating Systems
+What is Device Manager used for?,"Viewing and managing hardware and drivers, including updating, disabling, or rolling back drivers.",Core 2: Operating Systems
+What does Disk Management do?,"Initialize, partition, format, and assign drive letters to disks.",Core 2: Operating Systems
+What does Event Viewer show?,"System, application, and security logs.",Core 2: Operating Systems
+What does msconfig do?,Controls startup selections and boot options such as safe mode.,Core 2: Operating Systems
+What does regedit do?,Opens the Registry Editor. Edit with care and back up first.,Core 2: Operating Systems
+What does gpedit.msc open?,The Local Group Policy Editor (not available in Home edition).,Core 2: Operating Systems
+What does perfmon (Performance Monitor) do?,Tracks performance counters over time and builds data collector sets.,Core 2: Operating Systems
+What does sfc /scannow do?,Scans and repairs corrupted protected Windows system files.,Core 2: Operating Systems
+What does chkdsk /f /r do?,Fixes file system errors (/f) and locates bad sectors and recovers readable data (/r).,Core 2: Operating Systems
+What does DISM /Online /Cleanup-Image /RestoreHealth do?,Repairs the Windows component store (the source sfc uses).,Core 2: Operating Systems
+What does gpupdate /force do?,Immediately reapplies Group Policy settings.,Core 2: Operating Systems
+What does ipconfig /release then /renew do?,Releases the DHCP lease and requests a new IP configuration.,Core 2: Operating Systems
+What does ipconfig /flushdns do?,Clears the local DNS resolver cache.,Core 2: Operating Systems
+What does nslookup do?,Queries DNS servers to resolve names to addresses.,Core 2: Operating Systems
+What does tracert (traceroute) show?,Each router hop along the path to a destination and the delay at each hop.,Core 2: Operating Systems
+What does netstat show?,"Active connections, listening ports, and related statistics.",Core 2: Operating Systems
+What does the net use command do?,"Connects, disconnects, and lists mapped network drives and shares.",Core 2: Operating Systems
+What does robocopy do?,A robust command-line file copy tool for large copies and mirroring.,Core 2: Operating Systems
+What does the Linux command chmod 755 file set?,"Owner read/write/execute (7), group read/execute (5), others read/execute (5).",Core 2: Operating Systems
+What does the Linux command chown do?,Changes the owner (and optionally group) of a file.,Core 2: Operating Systems
+What does grep do?,Searches text for lines that match a pattern.,Core 2: Operating Systems
+What do ps and top show?,ps lists running processes. top shows live resource usage.,Core 2: Operating Systems
+What does sudo do?,Runs a command with elevated (root) privileges.,Core 2: Operating Systems
+Which Linux commands show disk usage?,df shows free space per file system. du shows space used by files and folders.,Core 2: Operating Systems
+What does apt (or yum/dnf) do?,"Installs, updates, and removes software packages.",Core 2: Operating Systems
+What does the Linux command dd do and why be careful?,Copies raw data between devices or files. A wrong target can overwrite a disk.,Core 2: Operating Systems
+What does Time Machine do on macOS?,Automatic backups to an external or network drive.,Core 2: Operating Systems
+What is the macOS Keychain?,"A store for passwords, keys, and certificates.",Core 2: Operating Systems
+What does macOS Force Quit do and how do you open it?,Ends unresponsive apps. Press Command + Option + Esc.,Core 2: Operating Systems
+What is FileVault?,Full-disk encryption for macOS.,Core 2: Operating Systems
+What is Gatekeeper?,A macOS feature that blocks apps that are not from approved sources.,Core 2: Operating Systems
+What are the main installation methods?,"USB, optical media, network boot (PXE), image deployment, and in-place upgrade or clean install.",Core 2: Operating Systems
+What is the difference between a clean install and an in-place upgrade?,"A clean install wipes the disk and starts fresh. An in-place upgrade keeps apps, files, and settings.",Core 2: Operating Systems
+What does UAC do?,User Account Control prompts for confirmation before changes that need administrator rights.,Core 2: Operating Systems
+What is the difference between a workgroup and a domain?,Workgroup is peer-to-peer with local accounts on each PC. A domain uses central accounts and policies (Active Directory).,Core 2: Operating Systems
+What is Group Policy used for?,Centrally applying settings and restrictions to users and computers in a domain.,Core 2: Operating Systems
+What is an access control vestibule (mantrap)?,A small room with two interlocking doors that lets only one person through at a time to stop tailgating.,Core 2: Security
+What is tailgating?,Following an authorized person through a door without proper authentication.,Core 2: Security
+What is shoulder surfing?,Watching someone enter a password or read their screen. A privacy filter helps.,Core 2: Security
+What is dumpster diving?,Searching trash for sensitive information.,Core 2: Security
+What is phishing?,Fraudulent messages that trick people into revealing credentials or installing malware.,Core 2: Security
+What is spear phishing?,A phishing attack aimed at a specific person or group using personal details.,Core 2: Security
+What is whaling?,Phishing aimed at senior executives.,Core 2: Security
+What are vishing and smishing?,Vishing is phishing by voice call. Smishing is phishing by SMS text.,Core 2: Security
+What is an on-path (man-in-the-middle) attack?,An attacker secretly sits between two parties to read or alter traffic.,Core 2: Security
+What is a brute force attack versus a dictionary attack?,Brute force tries all possible combinations. A dictionary attack tries a list of likely passwords.,Core 2: Security
+What is a zero-day exploit?,An attack on a vulnerability that the vendor has not yet patched or even known about.,Core 2: Security
+What is a trojan?,Malware disguised as a legitimate program.,Core 2: Security
+What is ransomware?,Malware that encrypts data and demands payment for the key.,Core 2: Security
+What is a rootkit?,Malware that hides deep in the OS with administrator-level access. Often needs offline scanning or reinstall.,Core 2: Security
+What is a keylogger?,Software or hardware that records keystrokes.,Core 2: Security
+What is a botnet?,"A network of compromised devices controlled remotely, often used for DDoS.",Core 2: Security
+What is an evil twin?,A rogue access point that imitates a legitimate Wi-Fi network.,Core 2: Security
+What is SQL injection?,Inserting malicious SQL through input fields to read or alter a database.,Core 2: Security
+What is cross-site scripting (XSS)?,Injecting malicious script into a web page that runs in other users' browsers.,Core 2: Security
+Which Wi-Fi security standard is the strongest today?,WPA3. WPA2 with AES (CCMP) is still acceptable. WEP and TKIP are weak.,Core 2: Security
+What is multifactor authentication?,"Using two or more categories: something you know, have, or are.",Core 2: Security
+"What is the principle of least privilege, and what is its benefit?",Give users only the access they need. It limits damage from mistakes or compromise.,Core 2: Security
+What are the seven steps for malware removal?,1 Investigate and verify symptoms. 2 Quarantine the system. 3 Disable System Restore. 4 Remediate (update and scan). 5 Schedule scans and updates. 6 Enable System Restore and make a restore point. 7 Educate the user.,Core 2: Security
+Why disable System Restore when removing malware?,Restore points can contain the infection and may reinfect the system.,Core 2: Security
+What are acceptable methods of destroying a hard drive?,"Shredding, drilling, incineration, or degaussing (for magnetic media). Crypto-erase or secure wipe for reuse.",Core 2: Security
+Does degaussing work on SSDs?,"No. Degaussing is for magnetic media. SSDs need crypto-erase, secure erase, or physical destruction.",Core 2: Security
+What does BitLocker do?,"Full-disk encryption for Windows, using the TPM where available.",Core 2: Security
+What is EFS?,Encrypting File System: per-file or folder encryption on NTFS.,Core 2: Security
+What are common steps to secure a SOHO router?,"Change default credentials, update firmware, disable WPS, use WPA3/WPA2, disable unused services, and change the default SSID.",Core 2: Security
+Is MAC filtering a strong security control?,No. MAC addresses can be sniffed and spoofed.,Core 2: Security
+What is the purpose of a screen lock and screensaver timeout?,Prevents unauthorized access when you step away.,Core 2: Security
+What is a good password policy?,"Long passphrases, unique per account, no reuse, a password manager, and MFA. Frequent forced rotation is no longer recommended without a reason.",Core 2: Security
+What does a security key or smart card provide?,A physical authentication factor: something you have.,Core 2: Security
+What is an antivirus signature?,A pattern used to recognize known malware. Keep definitions updated.,Core 2: Security
+What does a BSOD stop code like INACCESSIBLE_BOOT_DEVICE suggest?,"Windows cannot access the boot volume: a storage driver, disk, or corruption problem.",Core 2: Software Troubleshooting
+Windows will not boot. What tools can help?,"Startup Repair, Safe Mode, System Restore, bootrec /fixmbr /fixboot /rebuildbcd, and the recovery environment (WinRE).",Core 2: Software Troubleshooting
+What does bootrec /rebuildbcd do?,Scans for Windows installations and rebuilds the boot configuration data.,Core 2: Software Troubleshooting
+What does Safe Mode do?,Starts Windows with minimal drivers and services to troubleshoot.,Core 2: Software Troubleshooting
+A PC is slow. What are common software causes?,"Too many startup programs, low RAM, malware, a full disk, or background updates.",Core 2: Software Troubleshooting
+Why do browser redirects and unexpected pop-ups suggest malware?,"Browser hijackers and adware change settings and inject ads. Scan, remove extensions, and reset the browser.",Core 2: Software Troubleshooting
+What do you try first when an application crashes?,"Restart it, check for updates or patches, check logs, repair or reinstall, then check compatibility.",Core 2: Software Troubleshooting
+A user cannot reach a network share. What might you check?,"Credentials and permissions, name resolution, network connection, and whether the share or service is running.",Core 2: Software Troubleshooting
+A mobile app crashes repeatedly. What are the usual fixes?,"Force close, restart the device, update or reinstall the app, and free storage space.",Core 2: Software Troubleshooting
+What does 'No OS found' usually mean?,"The boot order is wrong, the boot drive is not detected, or the boot sector is damaged.",Core 2: Software Troubleshooting
+What does a 'low memory' warning suggest?,"Applications use too much RAM. Close apps, add RAM, or check for a memory leak.",Core 2: Software Troubleshooting
+What is the 3-2-1 backup rule?,"Keep 3 copies of data, on 2 different media, with 1 copy offsite.",Core 2: Operational Procedures
+What is a full backup?,A copy of all selected data.,Core 2: Operational Procedures
+What is an incremental backup?,Copies only data changed since the last backup of any type. Restore needs the last full plus all incrementals.,Core 2: Operational Procedures
+What is a differential backup?,Copies data changed since the last full backup. Restore needs the last full plus the latest differential.,Core 2: Operational Procedures
+What is the purpose of an ESD wrist strap?,Safely grounds you to prevent electrostatic discharge from damaging components.,Core 2: Operational Procedures
+What is an SDS?,"Safety Data Sheet: describes hazards, handling, and disposal for chemicals and batteries.",Core 2: Operational Procedures
+What is the difference between a surge protector and a UPS?,A surge protector blocks voltage spikes. A UPS also supplies battery power during outages.,Core 2: Operational Procedures
+Which fire extinguisher class is for electrical fires?,"Class C. Class A is for ordinary combustibles, B is for flammable liquids, D is for metals, K is for kitchen oils.",Core 2: Operational Procedures
+Why is change management used?,"To plan, approve, document, and communicate changes while reducing risk, with a rollback plan.",Core 2: Operational Procedures
+What should a change request include?,"Scope, risk analysis, plan, rollback plan, approval, and testing.",Core 2: Operational Procedures
+What is chain of custody?,"Documentation of who handled evidence and when, to prove it was not altered.",Core 2: Operational Procedures
+What should you do first when you suspect a security incident?,"Identify and report it per policy, preserve evidence, and do not tamper with the system.",Core 2: Operational Procedures
+What does PII stand for?,Personally Identifiable Information: data that can identify a person.,Core 2: Operational Procedures
+What does HIPAA protect?,Protected health information (PHI) in the United States.,Core 2: Operational Procedures
+What does PCI DSS cover?,Security requirements for handling payment card data.,Core 2: Operational Procedures
+What does GDPR cover?,Privacy and data protection rules for personal data of people in the EU.,Core 2: Operational Procedures
+What is an EULA?,End User License Agreement: the terms under which software may be used.,Core 2: Operational Procedures
+What is the difference between open-source and commercial licensing?,Open source provides source code under specified permissions. Commercial licenses restrict use and redistribution.,Core 2: Operational Procedures
+What are good professional behaviors with a customer?,"Be on time, listen, avoid jargon, stay calm, do not interrupt, respect privacy, and follow up.",Core 2: Operational Procedures
+What is RDP?,Remote Desktop Protocol: graphical remote access to Windows (TCP 3389).,Core 2: Operational Procedures
+What is SSH used for?,Encrypted remote command-line access and file transfer (TCP 22).,Core 2: Operational Procedures
+What is VNC?,A cross-platform remote desktop tool that shares a screen.,Core 2: Operational Procedures
+What is an RMM tool?,Remote Monitoring and Management software that technicians use to manage many clients' devices.,Core 2: Operational Procedures
+Which file extensions identify common scripts?,".bat (batch), .ps1 (PowerShell), .sh (shell), .py (Python), .js (JavaScript), .vbs (VBScript).",Core 2: Operational Procedures
+What is a variable in a script?,A named storage location for a value.,Core 2: Operational Procedures
+What is a loop for?,Repeats a set of commands until a condition is met.,Core 2: Operational Procedures
+What is a documentation best practice for a new technician ticket?,"Record the problem, steps taken, results, and the final solution so others can reuse it.",Core 2: Operational Procedures

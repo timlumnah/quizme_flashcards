@@ -1,0 +1,7 @@
+build/
+.juce_sdk/
+.DS_Store
+debug/
+sample_decks/personal/
+Screenshot*.png
+RELEASING.md

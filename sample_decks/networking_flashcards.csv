@@ -1,0 +1,69 @@
+Question,Answer
+TCP,"Transmission Control Protocol – Provides reliable, ordered, and error-checked delivery of data."
+IP,Internet Protocol – Responsible for addressing and routing packets across networks.
+UDP,"User Datagram Protocol – A lightweight, connectionless transport protocol with minimal overhead."
+HTTP,Hypertext Transfer Protocol – Used for transmitting hypermedia documents on the web.
+HTTPS,Hypertext Transfer Protocol Secure – HTTP with SSL/TLS encryption for secure communication.
+SMTP,Simple Mail Transfer Protocol – A standard for email transmission across IP networks.
+DNS,Domain Name System – Translates human-readable domain names into IP addresses.
+MAC,Media Access Control – Identifies devices on a network at the data link layer.
+LAN,Local Area Network – Connects computers within a limited geographic area.
+WAN,Wide Area Network – A network spanning a large geographical area.
+VPN,Virtual Private Network – Encrypts data to create a secure network over the internet.
+NAT,Network Address Translation – Modifies network address information to conserve IP addresses.
+DHCP,Dynamic Host Configuration Protocol – Assigns IP addresses automatically to devices on a network.
+FTP,File Transfer Protocol – Used for transferring files between a client and a server.
+OSI,Open Systems Interconnection – A conceptual model with seven layers for networking protocols.
+SSL/TLS,Secure Sockets Layer / Transport Layer Security – Provides encryption for network communication.
+BGP,Border Gateway Protocol – Manages routing between autonomous systems on the internet.
+ARP,Address Resolution Protocol – Resolves IP addresses to MAC addresses.
+CIDR,Classless Inter-Domain Routing – A method for IP address allocation and routing.
+QoS,Quality of Service – Measures and controls network traffic performance.
+VoIP,Voice over Internet Protocol – Delivers voice communications over IP networks.
+ICMP,Internet Control Message Protocol – Used for network diagnostics and error reporting.
+MPLS,Multiprotocol Label Switching – Directs data using labels instead of IP addresses.
+SAN,Storage Area Network – A dedicated network for high-speed data storage access.
+SDN,Software-Defined Networking – Centralized network control through software-based management.
+SSH,Secure Shell – A protocol for securely accessing remote systems.
+SNMP,Simple Network Management Protocol – Used for managing and monitoring network devices.
+IGMP,Internet Group Management Protocol – Manages multicast group memberships.
+CDN,Content Delivery Network – Distributes web content across multiple locations for faster access.
+VLAN,Virtual Local Area Network – Segments networks logically instead of physically.
+WEP,Wired Equivalent Privacy – A deprecated wireless network security protocol.
+WPA,Wi-Fi Protected Access – A security protocol designed to secure wireless networks.
+WPA2,Wi-Fi Protected Access 2 – An improved version of WPA using AES encryption.
+802.11,"A family of wireless networking standards, commonly known as Wi-Fi."
+Ethernet,A wired networking technology for LANs.
+PoE,Power over Ethernet – Transmits electrical power along with data over Ethernet cables.
+STP,Spanning Tree Protocol – Prevents network loops in Ethernet networks.
+RIP,Routing Information Protocol – A distance-vector routing protocol for small networks.
+OSPF,Open Shortest Path First – A link-state routing protocol used in IP networks.
+EIGRP,Enhanced Interior Gateway Routing Protocol – A Cisco proprietary routing protocol.
+IPv4,Internet Protocol version 4 – Uses 32-bit addresses and supports about 4.3 billion devices.
+IPv6,Internet Protocol version 6 – Uses 128-bit addresses for a vastly larger address space.
+Frame Relay,A WAN technology that relays data frames across a network.
+ATM,"Asynchronous Transfer Mode – A high-speed networking protocol for data, voice, and video."
+T1,A leased telecommunications line that carries 1.544 Mbps of data.
+T3,A high-capacity leased line carrying 44.736 Mbps of data.
+SONET,Synchronous Optical Networking – A standard for high-speed optical networks.
+ISDN,"Integrated Services Digital Network – Transmits voice, video, and data over digital lines."
+LTE,Long-Term Evolution – A wireless broadband communication standard.
+5G,Fifth-generation mobile network technology with higher speeds and lower latency.
+NTP,Network Time Protocol – Synchronizes clocks over a network.
+GRE,Generic Routing Encapsulation – Encapsulates network layer protocols over IP tunnels.
+PPTP,Point-to-Point Tunneling Protocol – An obsolete VPN protocol.
+L2TP,Layer 2 Tunneling Protocol – A tunneling protocol often used with IPsec for VPNs.
+IPsec,Internet Protocol Security – Secures network communications via encryption and authentication.
+Proxy Server,An intermediary server between a client and the internet.
+Reverse Proxy,A server that retrieves resources from other servers on behalf of a client.
+Load Balancer,Distributes network traffic across multiple servers to optimize performance.
+IDS,Intrusion Detection System – Monitors network traffic for suspicious activity.
+IPS,Intrusion Prevention System – Actively prevents detected threats in network traffic.
+Firewall,A network security device that monitors and controls incoming and outgoing traffic.
+DMZ,Demilitarized Zone – A network segment that separates public and private networks.
+NIDS,Network-based Intrusion Detection System – Detects threats on a network level.
+HIDS,Host-based Intrusion Detection System – Detects threats on a single device.
+SIEM,Security Information and Event Management – Provides real-time security analysis of logs.
+MITM,Man-in-the-Middle Attack – An attack where a malicious actor intercepts communication.
+RADIUS,Remote Authentication Dial-In User Service – Manages authentication for remote access.
+TACACS+,Terminal Access Controller Access-Control System Plus – A Cisco authentication protocol.
